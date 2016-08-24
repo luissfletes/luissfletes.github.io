@@ -1,0 +1,315 @@
+body{
+    padding-top: 136px;
+    background: #eae8eb;
+}
+.img-center{
+	margin: 0 auto;
+}
+.bg-gray{
+	background: #EAE8EB;
+	color: #112033;
+}
+.bg-navy-blue{
+	background: #112033;
+	color: #fff;
+}
+.no-margin{
+	margin: 0;
+}
+ul.md-pl{
+	padding-left: 25px;
+}
+/*.left-bar section h2 > span.glyphicon,
+.right-bar section h2 > span.glyphicon{
+    border: 3px solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 6px 5px;
+    position: relative;
+    top: -3px;
+    margin-right: 15px;
+}
+.left-bar section h2 > span.glyphicon{
+	border-color: #fff;
+}
+.right-bar section h2 > span.glyphicon{
+	border-color: #112033;	
+}*/
+.left-bar .myself{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+.left-bar .myself header h1{
+	position: absolute;
+    left: 15px;
+    right: 60%;
+    top: 15px;
+    text-align: left;
+}
+.left-bar .myself header p{
+	position: absolute;
+    right: 15px;
+    left: 60%;
+    top: 15px;
+    text-align: right;
+}
+.left-bar section h2 > span.glyphicon,
+.right-bar section h2 > span.glyphicon{
+    border: 3px solid #112033;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 6px 5px;
+    position: relative;
+    top: -3px;
+    margin-right: 15px;
+}
+/*.left-bar section h2 > span.glyphicon{
+	border-color: #fff;
+}
+.right-bar section h2 > span.glyphicon{
+	border-color: #112033;	
+}*/
+.left-bar section.myself h1{
+	font-size: 30px;
+}
+.left-bar section.myself img{
+	border: 3px solid #fff;
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.7);
+	box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.7);
+    position: relative;
+    top: 35px;
+}
+.left-bar section.myself p{
+    font-weight: 300;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 20px;
+}	
+.left-bar section.personal-skills h2:after{
+	left: 80%;
+}
+.left-bar section.personal-skills ul li,
+.right-bar section.pro-skill ul li{
+	position: relative;
+}
+.left-bar .profile{
+    margin-top: 35px;
+}
+.progress.inline-right{
+	display: inline-block;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+/*.left-bar section.personal-skills ul li .progress{
+	height: 10px;
+    width: 60px;
+    background-color: #112033;
+    border: 1px solid #fff;
+}
+.left-bar section.personal-skills ul li .progress .progress-bar{
+	background-color: #fff;
+}*/
+.left-bar section.contact h2:after{
+	left: 60%;
+}
+.left-bar section.contact ul li{
+	margin-bottom: 10px;
+}
+.left-bar section.contact ul li span {
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+    color: #112033;
+    margin-right: 15px;
+}
+
+.left-bar section.personal-skills ul li .progress,
+.left-bar section.languages ul li .progress,
+.right-bar section.pro-skill ul li .progress,
+.right-bar section.proficiency ul li .progress,
+.right-bar section.frameworks ul li .progress{
+	height: 10px;
+    width: 40px;
+    background-color: #EAE8EB;
+    border: 1px solid #112033;
+    right: 35px;
+}
+.left-bar section.personal-skills ul li .progress .progress-bar,
+.left-bar section.languages ul li .progress .progress-bar,
+.right-bar section.pro-skill ul li .progress .progress-bar,
+.right-bar section.proficiency ul li .progress .progress-bar,
+.right-bar section.frameworks ul li .progress .progress-bar{
+	background-color: #112033;
+}
+/*section header.with-line h2{
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    background: #112033;
+    padding-right: 20px;
+}
+section header.with-line:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    top: 35px;
+    right: 0px;
+    left: 15px;
+}*/
+section header.with-line h2{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: #EAE8EB;
+    padding-right: 20px;
+}
+section header.with-line:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #112033;
+    top: 35px;
+    right: 0px;
+    left: 15px;
+}
+/*.right-bar section header.with-line:after{
+	background-color: #112033;
+}
+.right-bar section header.with-line h2{
+	background-color: #EAE8EB;
+}*/
+@media(min-width: 992px){
+	body{
+	    padding-top: 0px;
+	}
+	.left-bar{
+		position: fixed;
+	    height: 100%;
+	    overflow: hidden;
+	    overflow-y: auto;
+	    background: #112033;
+	}
+	.left-bar section header.with-line h2{
+		font-size: 20px;
+	}
+	.left-bar .myself{
+		z-index: 0;
+	    position: relative;
+	    top: auto;
+	}
+	.left-bar section.myself{
+		padding-top: 20px;
+	}
+	.left-bar .myself header h1,
+	.left-bar .myself header p{
+		text-align: center;
+	}
+	.left-bar .myself header h1{
+		position: static;
+	    top: auto;
+	}
+	.left-bar .myself header p{
+		position: static;
+	    top: auto;
+	}
+	.left-bar section.myself p{
+		font-size: 18px;
+		margin-top: 0px;
+	}
+	.left-bar .profile{
+	    margin-top: 0px;
+	}
+	.left-bar section.myself img{
+	    top: auto;
+	}
+	.left-bar .profile,
+	.left-bar .personal-skills,
+	.left-bar .languages,
+	.left-bar .contact{
+		background-color: #112033;
+		color: #fff;
+	}
+	.left-bar section header.with-line:after{
+		background-color: #fff;
+	}
+	.left-bar section header.with-line h2{
+		background-color: #112033;
+	}
+	.left-bar section h2 > span.glyphicon{
+		border-color: #fff;
+	}
+	.left-bar section.personal-skills ul li .progress,
+	.left-bar section.languages ul li .progress{
+		height: 10px;
+	    width: 60px;
+	    background-color: #112033;
+	    border: 1px solid #fff;
+	}
+	.left-bar section.personal-skills ul li .progress .progress-bar,
+	.left-bar section.languages ul li .progress .progress-bar{
+		background-color: #fff;
+	}
+	.left-bar section.personal-skills ul li .progress,
+	.left-bar section.languages ul li .progress,
+	.right-bar section.pro-skill ul li .progress,
+	.right-bar section.proficiency ul li .progress,
+	.right-bar section.frameworks ul li .progress{
+	    width: 60px;
+	}
+	/*section header.with-line:after{
+		background-color: #112033;
+	}
+	section header.with-line h2{
+		background: #eae8eb;
+	}*/
+}
+@media(max-width: 500px){
+	.col-xs-6{
+		width: 100%;
+	}
+	.left-bar section.personal-skills ul li .progress,
+	.left-bar section.languages ul li .progress,
+	.right-bar section.pro-skill ul li .progress,
+	.right-bar section.proficiency ul li .progress,
+	.right-bar section.frameworks ul li .progress{
+	    width: 60px;
+	}
+	h3 {
+	    font-size: 20px;
+	}
+	h2 {
+	    font-size: 24px;
+	}
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
