@@ -19,8 +19,12 @@
 		<![endif]-->
 		<script>
 			var lang = navigator.language;
-			if (lang !== "es" && !lang.match(/es/)){ // Not Spanish -> Move to English version
-				window.location.href = "index-en.html";
+			var redirected = window.localStorage.getItem("redirected");
+			if (!redirected){
+				if (lang !== "es" && !lang.match(/es/)){ // Not Spanish -> Move to English version
+					window.localStorage.setItem("redirected", true);
+					window.location.href = "index-en.html";
+				}
 			}
 		</script>
 	</head>
@@ -97,8 +101,8 @@
 						</section>
 						<section class="col-xs-12 languages bg-gray">
 							<article>
-								<header>
-									<h2><span class="glyphicon glyphicon-comment"></span>Idiomas</h2>
+								<header class="with-line">
+									<h2 class="section-head"><span class="glyphicon glyphicon-comment"></span>Idiomas</h2>
 								</header>
 								<ul class="md-pl">
 									<li class="col-xs-6 col-sm-4 col-md-12">
@@ -479,7 +483,12 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="language-controls">
+			<div class="btn-group" role="group" aria-label="...">
+			  <a href="javascript:;" class="btn btn-primary" disabled="disabled">ES</a>
+			  <a href="index-en.html" class="btn btn-default">EN</a>
+			</div>
+		</div>
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

@@ -19,26 +19,11 @@ body{
 ul.md-pl{
 	padding-left: 25px;
 }
-/*.left-bar section h2 > span.glyphicon,
-.right-bar section h2 > span.glyphicon{
-    border: 3px solid;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    font-size: 12px;
-    padding: 6px 5px;
-    position: relative;
-    top: -3px;
-    margin-right: 15px;
+.language-controls{
+	position: fixed;
+	bottom: 30px;
+	right: 15px;
 }
-.left-bar section h2 > span.glyphicon{
-	border-color: #fff;
-}
-.right-bar section h2 > span.glyphicon{
-	border-color: #112033;	
-}*/
 .left-bar .myself{
     z-index: 100;
     position: fixed;
@@ -72,12 +57,6 @@ ul.md-pl{
     top: -3px;
     margin-right: 15px;
 }
-/*.left-bar section h2 > span.glyphicon{
-	border-color: #fff;
-}
-.right-bar section h2 > span.glyphicon{
-	border-color: #112033;	
-}*/
 .left-bar section.myself h1{
 	font-size: 30px;
 }
@@ -115,15 +94,6 @@ ul.md-pl{
     right: 0;
     top: 5px;
 }
-/*.left-bar section.personal-skills ul li .progress{
-	height: 10px;
-    width: 60px;
-    background-color: #112033;
-    border: 1px solid #fff;
-}
-.left-bar section.personal-skills ul li .progress .progress-bar{
-	background-color: #fff;
-}*/
 .left-bar section.contact h2:after{
 	left: 60%;
 }
@@ -156,23 +126,6 @@ ul.md-pl{
 .right-bar section.frameworks ul li .progress .progress-bar{
 	background-color: #112033;
 }
-/*section header.with-line h2{
-    display: inline-block;
-    font-size: 20px;
-    position: relative;
-    z-index: 2;
-    background: #112033;
-    padding-right: 20px;
-}
-section header.with-line:after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: #fff;
-    top: 35px;
-    right: 0px;
-    left: 15px;
-}*/
 section header.with-line h2{
     display: inline-block;
     position: relative;
@@ -189,15 +142,15 @@ section header.with-line:after{
     right: 0px;
     left: 15px;
 }
-/*.right-bar section header.with-line:after{
-	background-color: #112033;
-}
-.right-bar section header.with-line h2{
-	background-color: #EAE8EB;
-}*/
 @media(min-width: 992px){
 	body{
 	    padding-top: 0px;
+	}
+	.language-controls{
+		position: fixed;
+		bottom: auto;
+		right: 15px;
+		top: 30px;
 	}
 	.left-bar{
 		position: fixed;
@@ -273,12 +226,6 @@ section header.with-line:after{
 	.right-bar section.frameworks ul li .progress{
 	    width: 60px;
 	}
-	/*section header.with-line:after{
-		background-color: #112033;
-	}
-	section header.with-line h2{
-		background: #eae8eb;
-	}*/
 }
 @media(max-width: 500px){
 	.col-xs-6{
